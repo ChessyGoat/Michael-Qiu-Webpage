@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+body{
+    background: rgb(0, 0, 0);
+    font-size: 20px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(102, 102, 110, 0.5), rgba(206, 187, 153, 0.5)),url("200.jpg");
+}
+
+.container{
+    width: 60%;
+    margin: 10px  auto auto;
+    padding-top: 60px;
+
+    
+    
+}
+
+.contact-box{
+    background: rgba(253, 253, 253, 0.4);
+    display: flex;
+
+}
+
+.contact-left{
+    flex-basis:60% ;
+    padding: 40px 60px;
+
+
+}
+.contact-right{
+    flex-basis:40% ;
+    padding: 40px  ;
+    background: rgb(0, 0, 0);
+
+}
+h1{
+    margin-bottom: 10px;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+}
+.container p{
+    margin-bottom: 40px;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    height: 5vh;
+    border: none;
+    border-bottom: 1px solid rgba(190, 146, 0, .5);
+
+}
+textarea{
+    width: 100%;
+    border: 1px solid  rgba(235, 201, 89, 0.5);
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+::placeholder {                   /*----change placeholder style*/
+    color: rgb(187, 187, 187);
+    font-size: 1.6em;
+
+  }
+
+
+
+label{
+    margin-bottom:6px ;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+button{
+    background: rgb(0, 0, 0);
+    width: 100%;
+    border: none;
+    outline: none;
+    color: rgb(250, 208, 69);
+    height: 50px;
+    border-radius: 5%;
+    margin-top: 20;
+    box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.3);
+    font-family: 'Audiowide', cursive;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.contact-left h3{
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: 'Audiowide', cursive;
+    font-size: 1.7rem;
+}
+
+
+.contact-right h3{
+    color: #eec555;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: 'Audiowide', cursive;
+}
+tr td{
+    padding-top: 35px;
+    padding: 15px;
+    color: #eec555;
+}
+
+
+
+
+
+
+/*------------Footer text----*/
+
+  .text{
+    font-family: 'Mitr', sans-serif;
+    font-weight: 550;
+  
+    font-size: 1.2em;
+    text-align:center;
+    color:rgb(0, 0, 0);
+    position: absolute;
+    top: 90%;
+    left: 40%;
+  }
+
+/*--------------------------nav bar ----------*/
+
+.nav{
+    position: relative;
+  left: ;
+  align-items: center;
+  text-align: center;
+  
+    
+}
+
+
+  .nav ul{
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .nav li{
+    display: inline;
+  
+  }
+  .nav li a{
+    display: inline-block;
+    padding: .4em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Audiowide', cursive;
+    font-size: 2.0rem;
+    letter-spacing: 10px;
+  }
+  #navbar li a:hover{
+    background-color: #c4aa19;
+    color:#f1952c;
+    transition: all ease 0.4s;
+    font-weight: 900;
+  }
+  
+  
+  
+  .main-nav{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: lighter;
+  
+  
+  }
+  .main-nav li{
+    padding: 0 0;
+
+
+
+  }
+    .footer ul{
+
+        margin-top: 150px;
+          letter-spacing: 10px ;
+          font-size: 1.5em;
+          text-decoration: none;
+        text-align: center;
+        position: relative;
+        }
+        .footer li{
+          display: inline-table;
+          letter-spacing: 3px;
+          margin: 19px;
+          justify-content: space-around;
+        }
+        .footer a{
+            transition: 0.3s ;
+          display: ;
+        text-decoration: none;
+          color: rgb(0, 0, 0);
+          font-family: 'Audiowide', cursive;
+ 
+        }
+      
+      
+        .cool-link2{
+            font-size: 2.2rem;
+            position: fix;
+            justify-content: space-between;
+            margin-top: 20%;;
+         
+        }
+      
+      
+        .cool-link2::after{
+          content: '';
+          display: block;
+          width: 0;
+          height: 2px;
+          background: #f4c52b;
+          transition: width .3s;
+          margin: 0;
+        }
+        .cool-link2:hover::after{
+          width: 100%;
+          transition: width .3s;
+        
+        }
+        
+
+
+        /*---------------transition animation*/
+    .footer{
+    animation: transitionIn 0.7s;
+  }
+  
+  .container-box{
+    animation: transitionIn 0.7s;
+  }
+  @keyframes transitionIn{
+    from{
+      opacity: 0.5;
+      transform: rotateX(10deg);
+    }
+  
+    to{
+      opacity: 1;
+      transform: rotateX(0);
+    }
+  }
